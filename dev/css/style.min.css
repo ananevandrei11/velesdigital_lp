@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   position: relative;
   overflow-x: hidden !important;
 }
@@ -75,6 +75,16 @@ body, .modal, .modal-open, .header {
 
 .order__title, .order__text {
   color: #fff;
+}
+
+.block__card {
+  background-color: #00142d;
+  color: #fff;
+}
+
+.block__img {
+  width: 75px;
+  height: 75px;
 }
 
 @media screen and (max-width: 576px) {
