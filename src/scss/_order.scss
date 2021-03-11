@@ -1,0 +1,8 @@
+.order {
+	background: url('/img/recourse.jpg') center / cover no-repeat;
+	min-height: 200px;
+
+	&__title, &__text {
+		color: #fff;
+	}
+}

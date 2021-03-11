@@ -25,63 +25,65 @@ const fonter = require('gulp-fonter');
 
 //! MODE PRODUCTION START
 function html() {
-	return src('#dev/*.html')
-		.pipe(dest('#dist'))
+	return src('dev/*.html')
+		.pipe(dest('dist'))
 }
 
 function style() {
-	return src('#dev/css/style.min.css')
+	return src('dev/css/style.min.css')
 		.pipe(csso())
-		.pipe(dest('#dist/css'))
+		.pipe(dest('dist/css'))
 }
 
 function styleVendors() {
 	return src([
-		'#dev/css/vendor/vendors.min.css',
+		'dev/css/vendor/vendors.min.css',
 	])
-	.pipe(dest('#dist/css/vendor/'))
+	.pipe(dest('dist/css/vendor/'))
 }
 
 function js() {
 	return src([
-		'#dev/js/script.min.js',
-		'!#dev/js/vendors/vendors.min.js'
+		'dev/js/script.min.js',
+		'!dev/js/vendors/vendors.min.js'
 	])
 	.pipe(uglify())
-	.pipe(dest('#dist/js'))
+	.pipe(dest('dist/js'))
 }
 
 function jsVendors() {
 	return src([
-		'#dev/js/vendors/vendors.min.js',
+		'dev/js/vendors/vendors.min.js',
 	])
 	.pipe(uglify())
-	.pipe(dest('#dist/js/vendors/'))
+	.pipe(dest('dist/js/vendors/'))
 }
 
 function images() {
-	return src('#dev/img/**/*')
+	return src([
+		'dev/img/**/*'
+	])
 	.pipe(imagemin([
     imagemin.gifsicle({interlaced: true}),
     imagemin.mozjpeg({quality: 75, progressive: true}),
     imagemin.optipng({optimizationLevel: 5}),
-    imagemin.svgo({
-        plugins: [
-            {removeViewBox: true},
-            {cleanupIDs: false}
-        ]
-    })
+    // imagemin.svgo({
+    //     plugins: [
+    //         {removeViewBox: true},
+    //         {cleanupIDs: false}
+    //     ]
+    // })
 	]))
-	.pipe(dest('#dist/img'))
+	.pipe(dest('dist/img'))
 }
 
 function fonts() {
-	return src('#dev/fonts/**/*')
-	.pipe(dest('#dist/fonts'))
+	return src('dev/fonts/**/*')
+	.pipe(dest('dist/fonts'))
 }
 
 function cleanDist() {
-	return del('#dist/**/*')
+	return del('dist/**/*')
 }
 
 exports.html = html;
@@ -98,21 +100,21 @@ exports.build = series(cleanDist, html, style, styleVendors, js, jsVendors, imag
 function browsersyncDev() {
 	browserSync.init({
 			server: {
-					baseDir: '#dev/'
+					baseDir: 'dev/'
 			}
 	});
 }
 
 function htmlDev() {
-	return src('#src/views/*.html')
+	return src('src/views/*.html')
 		.pipe(fileinclude({
 			prefix: '@@'
 		}))
-		.pipe(dest('#dev'))
+		.pipe(dest('dev'))
 }
 
 function styleDev() {
-	return src('#src/scss/style.scss')
+	return src('src/scss/style.scss')
 		.pipe(autoprefixer({
 			overrideBrowserslist : 'last 5 version',
 			grid: 'no-autoplace'
@@ -122,7 +124,7 @@ function styleDev() {
 			mqpacker(),
 		]))
 		.pipe(rename('style.min.css'))
-		.pipe(dest('#dev/css'))
+		.pipe(dest('dev/css'))
 		.pipe(browserSync.stream())
 }
 /** ****************
@@ -136,20 +138,22 @@ function styleVendorDev() {
 	])
 		.pipe(concat('vendors.css'))
 		.pipe(rename('vendors.min.css'))
-		.pipe(dest('#dev/css/vendor/'))
+		.pipe(dest('dev/css/vendor/'))
 		.pipe(browserSync.stream())
 }
 
 function jsDev() {
 	return src([
-		'#src/js/main.js',
-		'!#src/js/vendors/vendors.min.js'
+		'src/js/main.js',
+		'src/js/modal.js',
+		'!src/js/vendors/vendors.min.js'
 	])
 	.pipe(babel({
 		presets: ['@babel/preset-env']
 		}))
+	.pipe(concat('script.js'))
 	.pipe(rename('script.min.js'))
-	.pipe(dest('#dev/js'))
+	.pipe(dest('dev/js'))
 	.pipe(browserSync.stream())
 }
 
@@ -157,46 +161,47 @@ function jsDev() {
 function jsVendorsDev() {
 	return src([
 		'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+		'node_modules/imask/dist/imask.min.js'
 	])
 	.pipe(concat('vendors.js'))
 	.pipe(rename('vendors.min.js'))
-	.pipe(dest('#dev/js/vendors/'))
+	.pipe(dest('dev/js/vendors/'))
 }
 
 function imagesDev() {
-	return src('#src/img/**/*')
-	.pipe(dest('#dev/img'))
+	return src('src/img/**/*')
+	.pipe(dest('dev/img'))
 }
 
 function otf2ttf() {
-	return src('#src/fonts/**/*.otf')
+	return src('src/fonts/**/*.otf')
 		.pipe(fonter({
 			formats: ['ttf']
 		}))
-		.pipe(dest('#src/fonts'))
+		.pipe(dest('src/fonts'))
 }
 
 function fontsDev() {
-	src('#src/fonts/**/*.ttf')
+	src('src/fonts/**/*.ttf')
 		.pipe(ttf2woff())
-		.pipe(dest('#dev/fonts'))
+		.pipe(dest('dev/fonts'))
 	return src([
-		'#src/fonts/**/*',
-		'!#src/fonts/**/*.otf'
+		'src/fonts/**/*',
+		'!src/fonts/**/*.otf'
 	])
 		.pipe(ttf2woff2())
-		.pipe(dest('#dev/fonts'))
+		.pipe(dest('dev/fonts'))
 }
 
 function cleanDev() {
-	return del('#dev/**/*')
+	return del('dev/**/*')
 }
 
 function watchDev() {
-	watch(['#src/components/*.html','#src/views/*.html'], htmlDev);
-	watch(['#src/scss/**/*.scss'], styleDev);
-	watch(['#src/js/**/*.js', '!#src/js/script.min.js', '!#src/js/vendors/vendors.min.js'], jsDev);
-	watch(['#dev/index.html']).on('change', browserSync.reload);
+	watch(['src/components/*.html','src/views/*.html'], htmlDev);
+	watch(['src/scss/**/*.scss'], styleDev);
+	watch(['src/js/**/*.js', '!src/js/script.min.js', '!src/js/vendors/vendors.min.js'], jsDev);
+	watch(['dev/index.html']).on('change', browserSync.reload);
 }
 
 exports.htmlDev = htmlDev;

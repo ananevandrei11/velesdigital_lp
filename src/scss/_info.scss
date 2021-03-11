@@ -1,0 +1,11 @@
+.info {
+	&__item {
+		min-height: 150px;
+	}
+	&__item-text {
+		color: rgb(19, 18, 18);
+		&:first-letter {
+			font-size: 150%;
+		}
+	}
+}

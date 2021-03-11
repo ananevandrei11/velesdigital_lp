@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	overflow-x: hidden !important;
+}
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	position: relative;
+	overflow-x: hidden !important;
+}
+ul {
+	list-style: none;
+}
+body, .modal, .modal-open, .header {
+	padding-right: 0px !important;
+}
+
+@import "_header.scss";
+@import "_top.scss";
+@import "_info.scss";
+@import "_order.scss";

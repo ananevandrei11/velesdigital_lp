@@ -5,12 +5,22 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden !important;
+}
+
 body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   position: relative;
+  overflow-x: hidden !important;
 }
 
 ul {
   list-style: none;
+}
+
+body, .modal, .modal-open, .header {
+  padding-right: 0px !important;
 }
 
 .header {
@@ -40,24 +50,35 @@ ul {
 .top {
   margin-top: 80px;
   background: linear-gradient(to right, #1e4b73, rgba(255, 255, 255, 0)), url("../img/banner.jpg") 70%/cover no-repeat;
+}
+
+.top__main {
   color: #fff;
 }
 
 .info__item {
-  flex-basis: 25%;
+  min-height: 150px;
+}
+
+.info__item-text {
+  color: #131212;
+}
+
+.info__item-text:first-letter {
+  font-size: 150%;
+}
+
+.order {
+  background: url("../img/recourse.jpg") center/cover no-repeat;
+  min-height: 200px;
+}
+
+.order__title, .order__text {
+  color: #fff;
 }
 
 @media screen and (max-width: 576px) {
   .top {
     background-size: 250% 100%;
-  }
-  .info__item {
-    flex-basis: 100% !important;
-  }
-}
-
-@media screen and (max-width: 756px) {
-  .info__item {
-    flex-basis: 40%;
   }
 }
