@@ -1,0 +1,68 @@
+<section class="letter container-fluid py-5 my-5">
+	<h2 class="letter__title w-100 fs-2 fw-bold text-center">Заказать услугу</h2>
+	<div class="row justify-content-center">
+		<form class="letter__form col-12 col-sm-6 g-3 needs-validation" id="formLetter" name="formLetter" method="POST" novalidate>
+			<div class="row">
+			<div class="col-12 mb-3">
+				<label for="nameLetter" class="form-label">ФИО*:</label>
+				<input type="text" class="form-control" id="nameLetter" name="nameLetter" placeholder="ФИО" required>
+				<div class="valid-feedback">
+					Отлично!
+				</div>
+				<div class="invalid-feedback">
+					Пожалуйста, введите Ваше имя
+				</div>
+			</div>
+			<div class="col-12 col-sm-5 mb-3">
+				<label for="phoneLetter" class="form-label">Телефон*:</label>
+				<input type="text" class="form-control" id="phoneLetter" name="phoneLetter" required>
+				<div class="valid-feedback">
+					Отлично!
+				</div>
+				<div class="invalid-feedback">
+					Пожалуйста, введите Ваш номер телефона
+				</div>
+			</div>
+			<div class="col-12 col-sm-7 mb-3">
+				<label for="emailLetter" class="form-label">Электронная почта*:</label>
+				<input type="text" class="form-control" id="emailLetter" name="emailLetter" required>
+				<div class="valid-feedback">
+					Отлично!
+				</div>
+				<div class="invalid-feedback">
+					Пожалуйста, введите Вашу электронную почту
+				</div>
+			</div>
+			<div class="col-12 mb-3">
+				<label for="siteLetter" class="form-label">Адрес вашего сайта*:</label>
+				<input type="text" class="form-control" id="siteLetter" name="siteLetter" required>
+				<div class="valid-feedback">
+					Отлично!
+				</div>
+				<div class="invalid-feedback">
+					Пожалуйста, введите адрес Вашего сайта
+				</div>
+			</div>
+			<div class="col-12 mb-3">
+					<label for="textLetter" class="form-label">Сообщение</label>
+					<textarea class="form-control" id="textLetter" name="textLetter" rows="5"></textarea>
+				</div>
+
+			<div class="col-12 mb-3">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="true" id="personDataLetter" required>
+					<label class="form-check-label" for="personDataLetter">
+						Я согласен на обработку персональных данных*
+					</label>
+					<div class="invalid-feedback">
+						Пожалуйста, дайте Ваше согласие на обработку персональных данных
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mb-3">
+				<button class="btn btn-warning fs-5 fw-bolder" type="submit">Отправить</button>
+			</div>
+		</div>
+		</form>
+	</div>
+</section>

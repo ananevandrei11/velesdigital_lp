@@ -104,9 +104,9 @@
 					</div>
 					<div class="modal-body">
 						<!--MODAL FORM-->
-						<form class="row g-3 needs-validation" id="formOrderService" name="formOrderService" novalidate>
+						<form class="row g-3 needs-validation" id="formOrderService" name="formOrderService" method="POST" novalidate>
 							<div class="col-12">
-								<label for="nameService" class="form-label">ФИО</label>
+								<label for="nameService" class="form-label">ФИО*:</label>
 								<input type="text" class="form-control" id="nameService" name="nameService" placeholder="ФИО" required>
 								<div class="valid-feedback">
 									Отлично!
@@ -116,7 +116,7 @@
 								</div>
 							</div>
 							<div class="col-12 col-sm-5">
-								<label for="phoneService" class="form-label">Телефон</label>
+								<label for="phoneService" class="form-label">Телефон*:</label>
 								<input type="text" class="form-control" id="phoneService" name="phoneService" required>
 								<div class="valid-feedback">
 									Отлично!
@@ -126,29 +126,29 @@
 								</div>
 							</div>
 							<div class="col-12 col-sm-7">
-								<label for="emailService" class="form-label">Электронная почта</label>
+								<label for="emailService" class="form-label">Электронная почта*:</label>
 								<input type="text" class="form-control" id="emailService" name="emailService" required>
 								<div class="valid-feedback">
 									Отлично!
 								</div>
 								<div class="invalid-feedback">
-									Пожалуйста, введите Ваш номер телефона
+									Пожалуйста, введите Вашу электронную почту
 								</div>
 							</div>
 							<div class="col-12">
-								<label for="siteService" class="form-label">Адрес вашего сайта</label>
+								<label for="siteService" class="form-label">Адрес вашего сайта*:</label>
 								<input type="text" class="form-control" id="siteService" name="siteService" required>
 								<div class="valid-feedback">
 									Отлично!
 								</div>
 								<div class="invalid-feedback">
-									Пожалуйста, введите Ваш номер телефона
+									Пожалуйста, введите адрес Вашего сайта
 								</div>
 							</div>
 							<div class="col-12">
 								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-									<label class="form-check-label" for="invalidCheck">
+									<input class="form-check-input" type="checkbox" value="true" id="personDataService" required>
+									<label class="form-check-label" for="personDataService">
 										Я согласен на обработку персональных данных
 									</label>
 									<div class="invalid-feedback">
@@ -174,16 +174,16 @@
 	<div class="container">
 		<!--INFO MAIN-->
 		<div class="row justify-content-center">
-			<h2 class="info__title col-12 col-md-6 text-center">SEO-оптимизация</h2>
+			<h2 class="info__title col-12 col-md-6 fs-2 fw-bolder text-center">SEO-оптимизация</h2>
 		</div>
 		<div class="row justify-content-center">
-			<p class="info__text col-12 col-md-10 text-center fs-5">Следующий шаг после создания веб-сайта – продвижение в
+			<p class="info__text col-12 col-md-10 text-center text-break fs-5">Следующий шаг после создания веб-сайта – продвижение в
 				поисковых системах. В России главные поисковые машины – Яндекс и Гугл, мы предлагаем SEO для обеих. Вам не нужно
 				пытаться понять все сложности поискового продвижения, - этим займёмся мы!
 			</p>
 		</div>
 		<div class="row justify-content-center">
-			<p class="info__text col-12 col-md-10 text-center fs-5">Выведение сайта в «топ» поисковиков – длительный процесс,
+			<p class="info__text col-12 col-md-10 text-center text-break fs-5">Выведение сайта в «топ» поисковиков – длительный процесс,
 				который требует специальных знаний. Зато результат даст вам множество ценных преимуществ:
 			</p>
 		</div>
@@ -191,27 +191,27 @@
 		<div class="row d-flex gap-5 justify-content-between mt-3">
 			<div class="info__item d-flex flex-column justify-content-center align-items-center col-12 col-sm-4 col-md-3 border border-dark rounded bg-primary p-2">
 				<img src="img/emoji-sunglasses.svg" class="info__item-img img-fluid w-25 h-25" alt="HAPPY CUSTOMERS">
-				<p class="info__item-text text-center fs-5 fw-bolder">привлечение «тёплых» клиентов,
+				<p class="info__item-text text-center text-break fs-5 fw-bolder">привлечение «тёплых» клиентов,
 					нуждающихся в вашем продукте</p>
 			</div>
 			<div class="info__item d-flex flex-column justify-content-center align-items-center col-12 col-sm-4 col-md-3 border border-dark rounded bg-primary p-2">
 				<img src="img/gear.svg" class="info__item-img img-fluid  w-25 h-25" alt="OPTIMIZATION">
-				<p class="info__item-text text-center fs-5 fw-bolder">оптимизацию интерфейса сайта (он
+				<p class="info__item-text text-center text-break fs-5 fw-bolder">оптимизацию интерфейса сайта (он
 					станет более удобным)</p>
 			</div>
 			<div class="info__item d-flex flex-column justify-content-center align-items-center col-12 col-sm-4 col-md-3 border border-dark rounded bg-primary p-2">
 				<img src="img/graph-up.svg" class="info__item-img img-fluid  w-25 h-25" alt="NEW MARKET">
-				<p class="info__item-text text-center fs-5 fw-bolder">нахождение новых рынков сбыта
+				<p class="info__item-text text-center text-break fs-5 fw-bolder">нахождение новых рынков сбыта
 					ваших товаров/услуг</p>
 			</div>
 			<div class="info__item d-flex flex-column justify-content-center align-items-center col-12 col-sm-4 col-md-3 border border-dark rounded bg-primary p-2">
 				<img src="img/person-plus.svg" class="info__item-img img-fluid  w-25 h-25" alt="CUSTOMERS PLUS">
-				<p class="info__item-text text-center fs-5 fw-bolder">появление дополнительных клиентов,
+				<p class="info__item-text text-center text-break fs-5 fw-bolder">появление дополнительных клиентов,
 					а значит – рост продаж</p>
 			</div>
 			<div class="info__item d-flex flex-column justify-content-center align-items-center col-12 col-sm-4 col-md-3 border border-dark rounded bg-primary p-2">
 				<img src="img/stopwatch.svg" class="info__item-img img-fluid  w-25 h-25" alt="LONG TIME">
-				<p class="info__item-text text-center fs-5 fw-bolder">отличие от контекстной рекламы,
+				<p class="info__item-text text-center text-break fs-5 fw-bolder">отличие от контекстной рекламы,
 					эффект от SEO – длительный</p>
 			</div>
 		</div>
@@ -239,9 +239,9 @@
 				</div>
 				<div class="modal-body">
 					<!--MODAL FORM-->
-					<form class="row g-3 needs-validation" id="formOrderCall" name="formOrderCall" novalidate>
+					<form class="row g-3 needs-validation" id="formOrderCall" name="formOrderCall" method="POST" novalidate>
 						<div class="col-12">
-							<label for="nameCall" class="form-label">ФИО</label>
+							<label for="nameCall" class="form-label">ФИО*:</label>
 							<input type="text" class="form-control" id="nameCall" name="nameCall" placeholder="ФИО" required>
 							<div class="valid-feedback">
 								Отлично!
@@ -251,7 +251,7 @@
 							</div>
 						</div>
 						<div class="col-12">
-							<label for="phoneCall" class="form-label">Телефон</label>
+							<label for="phoneCall" class="form-label">Телефон*:</label>
 							<input type="text" class="form-control" id="phoneCall" name="phoneCall" required>
 							<div class="valid-feedback">
 								Отлично!
@@ -262,8 +262,8 @@
 						</div>
 						<div class="col-12">
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-								<label class="form-check-label" for="invalidCheck">
+								<input class="form-check-input" type="checkbox" value="true" id="personDataOrder" required>
+								<label class="form-check-label" for="personDataOrder">
 									Я согласен на обработку персональных данных
 								</label>
 								<div class="invalid-feedback">
@@ -317,6 +317,174 @@
 		</div>
 		
 		</div>
+</section>
+	<section class="letter container-fluid py-5 my-5">
+	<h2 class="letter__title w-100 fs-2 fw-bold text-center">Заказать услугу</h2>
+	<div class="row justify-content-center">
+		<form class="letter__form col-12 col-sm-6 g-3 needs-validation" id="formLetter" name="formLetter" method="POST" novalidate>
+			<div class="row">
+			<div class="col-12 mb-3">
+				<label for="nameLetter" class="form-label">ФИО*:</label>
+				<input type="text" class="form-control" id="nameLetter" name="nameLetter" placeholder="ФИО" required>
+				<div class="valid-feedback">
+					Отлично!
+				</div>
+				<div class="invalid-feedback">
+					Пожалуйста, введите Ваше имя
+				</div>
+			</div>
+			<div class="col-12 col-sm-5 mb-3">
+				<label for="phoneLetter" class="form-label">Телефон*:</label>
+				<input type="text" class="form-control" id="phoneLetter" name="phoneLetter" required>
+				<div class="valid-feedback">
+					Отлично!
+				</div>
+				<div class="invalid-feedback">
+					Пожалуйста, введите Ваш номер телефона
+				</div>
+			</div>
+			<div class="col-12 col-sm-7 mb-3">
+				<label for="emailLetter" class="form-label">Электронная почта*:</label>
+				<input type="text" class="form-control" id="emailLetter" name="emailLetter" required>
+				<div class="valid-feedback">
+					Отлично!
+				</div>
+				<div class="invalid-feedback">
+					Пожалуйста, введите Вашу электронную почту
+				</div>
+			</div>
+			<div class="col-12 mb-3">
+				<label for="siteLetter" class="form-label">Адрес вашего сайта*:</label>
+				<input type="text" class="form-control" id="siteLetter" name="siteLetter" required>
+				<div class="valid-feedback">
+					Отлично!
+				</div>
+				<div class="invalid-feedback">
+					Пожалуйста, введите адрес Вашего сайта
+				</div>
+			</div>
+			<div class="col-12 mb-3">
+					<label for="textLetter" class="form-label">Сообщение</label>
+					<textarea class="form-control" id="textLetter" name="textLetter" rows="5"></textarea>
+				</div>
+
+			<div class="col-12 mb-3">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="true" id="personDataLetter" required>
+					<label class="form-check-label" for="personDataLetter">
+						Я согласен на обработку персональных данных*
+					</label>
+					<div class="invalid-feedback">
+						Пожалуйста, дайте Ваше согласие на обработку персональных данных
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mb-3">
+				<button class="btn btn-warning fs-5 fw-bolder" type="submit">Отправить</button>
+			</div>
+		</div>
+		</form>
+	</div>
+</section>
+	<section class="approach container-fluid my-5 py-5">
+	<!--APPROACH TITLE-->
+	<div class="container">
+		<div class="row flex-column justify-content-center align-items-center">
+			<div class="col-12 col-sm-6 d-flex flex-column justify-content-center align-items-center">
+				<h2 class="approach fs-2 fw-bolder text-center">Делаем только нужное</h2>
+				<p class="approach__subtitle fs-3 text-center text-muted">100% БЕЛЫЙ ПОДХОД</p>
+			</div>
+		</div>
+	</div>
+
+	<!--APPROACH ITEMS-->
+	<div class="container">
+		<div class="row gap-5 d-flex align-items-stretch justify-content-center">
+			<article class="approach__item col-12 col-md-5 d-flex flex-column p-0">
+				<figure class="figure w-100">
+					<picture>
+						<source media="(max-width: 576px)" srcset="img/seo/leads-min.png">
+						<source media="(min-width: 577px)" srcset="img/seo/leads.png">
+						<img src="img/seo/leads.png" class="figure-img img-fluid" alt="SEO TOP">
+					</picture>
+				</figure>
+				<h3 class="approach__item-title flex-grow-1 p-3 fs-5 text-break">Продвижение сайта в top</h3>
+				<p class="approach__item-text p-3">Принципиальная позиция «Велес Диджитал» - наполнение сайта такими текстами, чтобы они нравились и
+					поисковым
+					системам, и людям. Ведь вкладываться в продвижение сайта есть смысл, только когда он интересен привлечённым
+					через поисковик посетителям.</p>
+			</article>
+
+			<article class="approach__item col-12 col-md-5 d-flex flex-column p-0">
+				<figure class="figure w-100">
+					<picture>
+						<source media="(max-width: 576px)" srcset="img/seo/online-marketing-min.png">
+						<source media="(min-width: 577px)" srcset="img/seo/online-marketing.png">
+						<img src="img/seo/online-marketing.png" class="figure-img img-fluid" alt="SEO TOP">
+					</picture>
+				</figure>
+				<h3 class="approach__item-title flex-grow-1 p-3 fs-5 text-break">Продвижение сайта в яндексе и гугле недорого
+				</h3>
+				<p class="approach__item-text p-3">«Велес Диджитал» понимает, что ваш бизнес должен приносить выгоду. Цена за продвижение сайта в
+					яндексе (или
+					гугле) в топ 10 устанавливается таким образом, чтобы вы легко её отбили за счёт роста продаж через сайт. Мы
+					не берём «рекламной наценки».</p>
+			</article>
+
+			<article class="approach__item col-12 col-md-5 d-flex flex-column p-0">
+				<figure class="figure w-100">
+					<picture>
+						<source media="(max-width: 576px)" srcset="img/seo/screen-min.png">
+						<source media="(min-width: 577px)" srcset="img/seo/screen.png">
+						<img src="img/seo/screen.png" class="figure-img img-fluid" alt="SEO TOP">
+					</picture>
+				</figure>
+				<h3 class="approach__item-title flex-grow-1 p-3 fs-5 text-break">Создание и продвижение сайтов
+				</h3>
+				<p class="approach__item-text p-3">Сео-продвижение уже существующего сайта, о котором у поисковых машин имеется сложившееся «мнение» - только один из вариантов. Гораздо интересней и выгодней заказать комплекс услуг: создание и продвижение сайта. Мы успешно продвигаем и раскручиваем как «старые», так и «новые» сайты.</p>
+			</article>
+
+			<article class="approach__item col-12 col-md-5 d-flex flex-column p-0">
+				<figure class="figure w-100">
+					<picture>
+						<source media="(max-width: 576px)" srcset="img/seo/seo-keyword-min.png">
+						<source media="(min-width: 577px)" srcset="img/seo/seo-keyword.png">
+						<img src="img/seo/seo-keyword.png" class="figure-img img-fluid" alt="SEO TOP">
+					</picture>
+				</figure>
+				<h3 class="approach__item-title flex-grow-1 p-3 fs-5 text-break">Ручной сбор семантического ядра
+				</h3>
+				<p class="approach__item-text p-3">Кропотливо вручную собираем запросы, по которым нужно продвигать ваш сайт. В отбор идут только те запросы, которые приведут на сайт потенциальных клиентов. Сайт будет с первых дней существования заполняться «правильными» текстами, которые постепенно выведут его в топ одной или обеих поисковых систем.</p>
+			</article>
+
+			<article class="approach__item col-12 col-md-5 d-flex flex-column p-0">
+				<figure class="figure w-100">
+					<picture>
+						<source media="(max-width: 576px)" srcset="img/seo/seo-analytics-min.png">
+						<source media="(min-width: 577px)" srcset="img/seo/seo-analytics.png">
+						<img src="img/seo/seo-analytics.png" class="figure-img img-fluid" alt="SEO TOP">
+					</picture>
+				</figure>
+				<h3 class="approach__item-title flex-grow-1 p-3 fs-5 text-break">Аналитика и отчетность
+				</h3>
+				<p class="approach__item-text p-3">Ежемесячно анализируем позиции в поисковых системах, а также трафик и поведение пользователей на вашем сайте. Предоставляем отчёты о проделанной работе, формируем дальнейшие рекомендации.</p>
+			</article>
+
+			<article class="approach__item col-12 col-md-5 d-flex flex-column p-0">
+				<figure class="figure w-100">
+					<picture>
+						<source media="(max-width: 576px)" srcset="img/seo/app-design-min.png">
+						<source media="(min-width: 577px)" srcset="img/seo/app-design.png">
+						<img src="img/seo/app-design.png" class="figure-img img-fluid" alt="SEO TOP">
+					</picture>
+				</figure>
+				<h3 class="approach__item-title flex-grow-1 p-3 fs-5 text-break">Глубокая оптимизация сайта
+				</h3>
+				<p class="approach__item-text p-3">Проводим технический аудит, выявляем уязвимые места сайта, находим ошибки, проблемы. Составляем план работ на несколько месяцев. Осуществляем переработку сайта. Проводим его техническую оптимизацию, изменяем содержимое сайта. При необходимости меняем структуру разделов/подразделов.</p>
+			</article>
+		</div>
+	</div>
+
 </section>
 	
 	</main>

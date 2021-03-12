@@ -87,6 +87,21 @@ body, .modal, .modal-open, .header {
   height: 75px;
 }
 
+.letter {
+  min-height: 200px;
+  background-color: #00142d;
+  color: #fff;
+}
+
+.approach__item {
+  background-color: #00142d;
+  color: #fff;
+}
+
+.approach__item-title {
+  flex-basis: 1;
+}
+
 @media screen and (max-width: 576px) {
   .top {
     background-size: 250% 100%;
