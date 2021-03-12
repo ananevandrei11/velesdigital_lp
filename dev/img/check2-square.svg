@@ -1,0 +1,12 @@
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-check2-square">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#00142d" id="svg_1" d="m3,14.5a1.5,1.5 0 0 1 -1.5,-1.5l0,-10a1.5,1.5 0 0 1 1.5,-1.5l8,0a0.5,0.5 0 0 1 0,1l-8,0a0.5,0.5 0 0 0 -0.5,0.5l0,10a0.5,0.5 0 0 0 0.5,0.5l10,0a0.5,0.5 0 0 0 0.5,-0.5l0,-5a0.5,0.5 0 0 1 1,0l0,5a1.5,1.5 0 0 1 -1.5,1.5l-10,0z"/>
+  <path fill="#00142d" id="svg_2" d="m8.354,10.354l7,-7a0.5,0.5 0 0 0 -0.708,-0.708l-6.646,6.647l-2.646,-2.647a0.5,0.5 0 1 0 -0.708,0.708l3,3a0.5,0.5 0 0 0 0.708,0z"/>
+ </g>
+</svg>

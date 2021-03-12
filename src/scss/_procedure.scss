@@ -1,0 +1,20 @@
+.procedure {
+	background: linear-gradient(90deg, rgba(0, 20, 45, 0.75) 0%, rgba(0,20,45,0.75) 100%), url("../img/seo/marketing.png") center / cover no-repeat;
+	
+	&__info {
+		color: #fff;
+	}
+	&__item .accordion-collapse {
+		transition: all 0.4s;
+		.accordion-button:not(.collapsed) {
+			color:rgb(0, 20, 45) !important;
+		}
+	}
+	
+}
+
+@media screen and (max-width: 576px) {
+	.letter {
+		background: linear-gradient(90deg, rgba(0,20,45,0.75) 0%, rgba(0,20,45,0.75) 100%), url("../img/seo/marketing-min.png") center / cover no-repeat;
+	}
+}
