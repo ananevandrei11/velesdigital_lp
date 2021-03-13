@@ -1,0 +1,29 @@
+.price {
+	background: linear-gradient(90deg, rgba(0, 20, 45, 0.75) 0%, rgba(0,20,45,0.75) 100%), url("../img/seo/store.png") center / cover no-repeat;
+	&__head {
+		color: #fff;
+	}
+	&__table {
+		background-color: rgba(255,255,255,0.8);
+		color: rgb(0, 20, 45);
+	}
+	&__table-th {
+		font-size: 125%;
+	}
+	&__table-td {
+		color: rgb(0, 20, 45);
+		&:nth-of-type(2), &:nth-of-type(3)  {
+			font-weight: bolder;
+			font-size: 125%;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.price {
+		background: linear-gradient(90deg, rgba(0,20,45,0.75) 0%, rgba(0,20,45,0.75) 100%), url("../img/seo/store-min.png") center / cover no-repeat;
+		&__table, &__table-th, &__table-td, &__table-td:nth-of-type(2), &__table-td:nth-of-type(3), &__table .btn {
+			font-size: 75%;
+		}
+	}
+}

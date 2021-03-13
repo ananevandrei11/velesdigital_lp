@@ -10,11 +10,30 @@
 			color:rgb(0, 20, 45) !important;
 		}
 	}
-	
+	&__list {
+		list-style-image: url("../img/record-fill.svg");
+	}
+	.accordion-button:not(.collapsed) {
+		color:rgb(0, 20, 45) !important;
+		background-color: transparent;
+		border-color: transparent !important;
+		box-shadow: 0 0 0 0 rgba(0,0,0,0);
+	}
+	.accordion-button::after {
+		background-image: url("../img/chevron-down.svg");
+		transition: all 0.4s;
+	}
+	.accordion-button:not(.collapsed)::after {
+		background-image: url("../img/chevron-down.svg");
+	}
+	.accordion-button img {
+		width: 25px;
+		height: 25px;
+	}
 }
 
 @media screen and (max-width: 576px) {
-	.letter {
+	.procedure {
 		background: linear-gradient(90deg, rgba(0,20,45,0.75) 0%, rgba(0,20,45,0.75) 100%), url("../img/seo/marketing-min.png") center / cover no-repeat;
 	}
 }

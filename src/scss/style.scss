@@ -10,6 +10,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	position: relative;
 	overflow-x: hidden !important;
+	color:rgb(0, 20, 45);
 }
 ul {
 	list-style: none;
@@ -17,19 +18,8 @@ ul {
 body, .modal, .modal-open, .header {
 	padding-right: 0px !important;
 }
-.accordion-button:not(.collapsed) {
-	color:rgb(0, 20, 45) !important;
-	background-color: transparent;
-	border-color: transparent !important;
-	box-shadow: 0 0 0 0 rgba(0,0,0,0);
-}
-.accordion-button::after {
-	background-image: url("../img/chevron-down.svg");
-	transition: all 0.4s;
-}
-.accordion-button:not(.collapsed)::after {
-	background-image: url("../img/chevron-down.svg");
-}
+
+
 
 @import "_header.scss";
 @import "_top.scss";
@@ -39,3 +29,8 @@ body, .modal, .modal-open, .header {
 @import "_letter.scss";
 @import "_approach.scss";
 @import "_procedure.scss";
+@import "_team.scss";
+@import "_price.scss";
+@import "_review.scss";
+@import "_faq.scss";
+@import "_footer.scss";

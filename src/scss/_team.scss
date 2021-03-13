@@ -1,0 +1,9 @@
+.team {
+	&__chapter-title {
+		text-transform: uppercase;
+	}
+	&__figure img {
+		object-fit: cover;
+		object-position: center;
+	}
+}

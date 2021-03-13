@@ -1,0 +1,11 @@
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-record-fill">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#00142d" id="svg_1" d="m8,13a5,5 0 1 0 0,-10a5,5 0 0 0 0,10z" fill-rule="evenodd"/>
+ </g>
+</svg>
