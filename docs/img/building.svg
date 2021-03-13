@@ -1,4 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694L1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
-  <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-building">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#00142d" id="svg_1" d="m14.763,0.075a0.5,0.5 0 0 1 0.237,0.425l0,15a0.5,0.5 0 0 1 -0.5,0.5l-3,0a0.5,0.5 0 0 1 -0.5,-0.5l0,-1.5l-1,0l0,1.5a0.5,0.5 0 0 1 -0.5,0.5l-9,0a0.5,0.5 0 0 1 -0.5,-0.5l0,-5.5a0.5,0.5 0 0 1 0.342,-0.474l5.658,-1.886l0,-3.14a0.5,0.5 0 0 1 0.276,-0.447l8,-4a0.5,0.5 0 0 1 0.487,0.022zm-8.763,8.619l-5,1.666l0,4.64l5,0l0,-6.306zm1,6.306l2,0l0,-1.5a0.5,0.5 0 0 1 0.5,-0.5l2,0a0.5,0.5 0 0 1 0.5,0.5l0,1.5l2,0l0,-13.691l-7,3.5l0,10.191z" fill-rule="evenodd"/>
+  <path fill="#00142d" id="svg_2" d="m2,11l1,0l0,1l-1,0l0,-1zm2,0l1,0l0,1l-1,0l0,-1zm-2,2l1,0l0,1l-1,0l0,-1zm2,0l1,0l0,1l-1,0l0,-1zm4,-4l1,0l0,1l-1,0l0,-1zm2,0l1,0l0,1l-1,0l0,-1zm-2,2l1,0l0,1l-1,0l0,-1zm2,0l1,0l0,1l-1,0l0,-1zm2,-2l1,0l0,1l-1,0l0,-1zm0,2l1,0l0,1l-1,0l0,-1zm-4,-4l1,0l0,1l-1,0l0,-1zm6,4l1,0l0,1l-1,0l0,-5l0,4zm2,0l1,0l0,1l-1,0l0,-5l0,4zm-8,-2l1,0l0,1l-1,0l0,-5l0,4zm10,2l1,0l0,1l-1,0l0,-7l0,6zm2,0l1,0l0,1l-1,0l0,-7l0,6zm0,-2l1,0l0,1l-1,0l0,-7l0,6z"/>
+ </g>
 </svg>

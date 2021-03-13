@@ -1,3 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" class="bi bi-envelope-fill">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#00142d" id="svg_1" d="m0.05,3.555a2,2 0 0 1 1.95,-1.555l12,0a2,2 0 0 1 1.95,1.555l-7.95,4.859l-7.95,-4.859zm-0.05,1.142l0,7.104l5.803,-3.558l-5.803,-3.546zm6.761,4.133l-6.57,4.027a2,2 0 0 0 1.809,1.143l12,0a2,2 0 0 0 1.808,-1.144l-6.57,-4.027l-1.238,0.757l-1.239,-0.757l0,0.001zm3.436,-0.587l5.803,3.558l0,-7.104l-5.803,3.546z"/>
+ </g>
 </svg>
