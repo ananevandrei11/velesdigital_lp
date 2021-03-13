@@ -8,5 +8,6 @@
 @media screen and (max-width:576px) {
 	.top {
 		background-size: 250% 100%;
+		background: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), url('../img/banner-min.jpg') center / 100% 100% no-repeat;
 	}
 }

@@ -115,14 +115,14 @@ function htmlDev() {
 
 function styleDev() {
 	return src('src/scss/style.scss')
-		.pipe(autoprefixer({
-			overrideBrowserslist : 'last 5 version',
-			grid: 'no-autoplace'
-		}))
 		.pipe(scss({outputStyle: 'expanded'}))
 		.pipe(postcss([
-			mqpacker(),
+			mqpacker()
 		]))
+		.pipe(autoprefixer({
+			overrideBrowserslist : ['last 5 versions'],
+			grid: 'no-autoplace'
+		}))
 		.pipe(rename('style.min.css'))
 		.pipe(dest('dev/css'))
 		.pipe(browserSync.stream())

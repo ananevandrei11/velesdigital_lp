@@ -31,41 +31,44 @@
 						<a class="nav-link" href="#procedure">Услуги</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="#team">Команда</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="#price">Тарифы</a>
 					</li>
 				</ul>
 			</div>
 			<!-- SOCIAL BUTTONS -->
-				<ul class="header__social navbar-nav d-flex flex-row flex-grow-1 flex-sm-grow-0 justify-content-between order-1 order-sm-2 order-lg-3 ms-auto me-3 me-lg-0">
-					<li class="pe-3 header__social-item">
+				<ul class="header__social navbar-nav d-flex flex-row flex-grow-1 flex-sm-grow-0 justify-content-between order-1 order-sm-2 order-lg-4 ms-auto me-3 me-lg-0">
+					<li class="d-block d-xl-none pe-2 pe-sm-3 header__social-item">
 						<a href="mailto:info@velesdigital.ru" class="header__social-link" target="_blank">
 							<img src="img/envelope-fill.svg" alt="EMAIL" srcset="">
 						</a>
 					</li>
-					<li class="pe-3 header__social-item">
+					<li class="d-block d-xl-none pe-2 pe-sm-3 header__social-item">
 						<a href="tel:+79219616651" class="header__social-link">
 							<img src="img/telephone-fill.svg" alt="PHONE" srcset="">
 						</a>
 					</li>
-					<li class="pe-3 header__social-item fw-bold">
+					<li class="d-block d-xl-none pe-2 pe-sm-3 header__social-item fw-bold">
 						<span>|</span>
 					</li>
-					<li class="pe-3 header__social-item">
+					<li class="pe-2 pe-sm-3 header__social-item">
 						<a href="https://vk.com/veles_digital" class="header__social-link" target="_blank">
 							<img src="img/vk.svg" alt="VKONTACTE" srcset="">
 						</a>
 					</li>
-					<li class="pe-3 header__social-item">
+					<li class="pe-2 pe-sm-3 header__social-item">
 						<a href="https://www.instagram.com/veles_digital/" class="header__social-link" target="_blank">
 							<img src="img/instagram.svg" alt="INSTAGRAM" srcset="">
 						</a>
 					</li>
-					<li class="pe-3 header__social-item">
+					<li class="pe-2 pe-sm-3 header__social-item">
 						<a href="https://www.youtube.com/channel/UCyFEgZL5xCdFG8e9yQ_zIRg" class="header__social-link" target="_blank">
 							<img src="img/youtube.svg" alt="YOUTUBE" srcset="">
 						</a>
 					</li>
-					<li class="pe-3 header__social-item">
+					<li class="pe-2 pe-sm-3 header__social-item">
 						<a href="https://telegram.me/vyacheslav_it" class="header__social-link" target="_blank">
 							<img src="img/telegram.svg" alt="TELEGRAM" srcset="">
 						</a>
@@ -76,25 +79,35 @@
 						</a>
 					</li>
 				</ul>
+				<!--PHONE&EMAIL HEADER-->
+				<div class="header__contact row d-none d-xl-flex flex-column order-lg-3 me-5 fw-bolder fs-5">
+					<a href="tel:+79219616651" class="text-decoration-none">
+						+7 (921) 961-66-51
+					</a>
+					<a href="mailto:info@velesdigital.ru" class="text-decoration-none" target="_blank">
+						info@velesdigital.ru
+					</a>
+					<!-- <div class=" "></div> -->
+				</div>
+				
 		</div>
 	</nav>
 </header>
 	<main>
 	<section class="top container-fluid p-5">
 	<div class="container">
+		<!--TOP TITLE-->
 		<div class="top__main row">
 			<div class="col-12 col-md-8 col-xl-6">
 				<h1 class="fs-1 fw-bold my-4">Продвижение сайта (SEO)</h1>
 				<h3 class="fs-3 fw-bold my-4">Поднимаем ваши сайты с самого дна поисковых систем от 9.900 руб/месяц</h3>
 				<h4 class="fs-4 fw-bold my-4">Число запросов для SEO продвижения не ограничено</h4>
 				<h4 class="fs-4 fw-bold my-4">Гарантии результата — в договоре</h4>
-				<button type="button" class="btn btn-warning fs-4 fw-bold my-4 py-3" data-bs-toggle="modal"
-				data-bs-target="#orderService">Заказать услугу</button>
+				<button type="button" class="btn btn-warning fs-6 fs-sm-4 fw-bold my-4 py-3" data-bs-toggle="modal"
+					data-bs-target="#orderService">Заказать услугу</button>
 			</div>
 		</div>
-
-
-		<!-- MODAL FOR ORDER -->
+		<!-- MODAL FOR ORDER SERVICE -->
 		<div class="modal fade" id="orderService" tabindex="-1" aria-labelledby="orderServiceLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -104,7 +117,8 @@
 					</div>
 					<div class="modal-body">
 						<!--MODAL FORM-->
-						<form class="row g-3 needs-validation" id="formOrderService" name="formOrderService" method="POST" novalidate>
+						<form class="row g-3 needs-validation" id="formOrderService" name="formOrderService" method="POST"
+							novalidate>
 							<div class="col-12">
 								<label for="nameService" class="form-label">ФИО*:</label>
 								<input type="text" class="form-control" id="nameService" name="nameService" placeholder="ФИО" required>
@@ -157,13 +171,13 @@
 								</div>
 							</div>
 							<div class="col-12">
-								<button class="btn btn-primary" type="submit">Отправить</button>
+								<button class="btn btn-warning fw-bolder" type="submit">Отправить</button>
 							</div>
 						</form>
 						<!---->
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+						<button type="button" class="btn btn-secondary fw-bolder" data-bs-dismiss="modal">Закрыть</button>
 					</div>
 				</div>
 			</div>
@@ -174,56 +188,56 @@
 	<div class="container">
 		<!--INFO MAIN-->
 		<div class="row justify-content-center">
-			<h2 class="info__title col-12 col-md-6 fs-2 fw-bolder text-center">SEO-оптимизация</h2>
+			<h2 class="info__title col-12 col-md-6 mb-4 fs-2 fw-bolder text-center">SEO-оптимизация</h2>
 		</div>
 		<div class="row justify-content-center">
-			<p class="info__text col-12 col-md-10 text-center text-break fs-5">Следующий шаг после создания веб-сайта – продвижение в
+			<p class="info__text col-12 col-md-10 text-center text-break fs-6 fs-sm-5">Следующий шаг после создания веб-сайта – продвижение в
 				поисковых системах. В России главные поисковые машины – Яндекс и Гугл, мы предлагаем SEO для обеих. Вам не нужно
 				пытаться понять все сложности поискового продвижения, - этим займёмся мы!
 			</p>
 		</div>
 		<div class="row justify-content-center">
-			<p class="info__text col-12 col-md-10 text-center text-break fs-5">Выведение сайта в «топ» поисковиков – длительный процесс,
+			<p class="info__text col-12 col-md-10 text-center text-break fs-6 fs-sm-5">Выведение сайта в «топ» поисковиков – длительный процесс,
 				который требует специальных знаний. Зато результат даст вам множество ценных преимуществ:
 			</p>
 		</div>
 		<!--INFO ITEM CARD-->
 		<div class="row d-flex gap-5 justify-content-between mt-3">
-			<div class="info__item d-flex flex-column justify-content-center align-items-center col-12 col-sm-4 col-md-3 border border-dark rounded bg-primary p-2">
-				<img src="img/emoji-sunglasses.svg" class="info__item-img img-fluid w-25 h-25" alt="HAPPY CUSTOMERS">
-				<p class="info__item-text text-center text-break fs-5 fw-bolder">привлечение «тёплых» клиентов,
+			<article class="info__item d-flex flex-column justify-content-center align-items-center col-12 col-sm-4 col-md-3 border border-dark bg-primary p-2">
+				<img src="img/emoji-sunglasses.svg" class="info__item-img img-fluid" alt="HAPPY CUSTOMERS">
+				<p class="info__item-text text-center text-break fs-6 fs-sm-5 fw-bolder">привлечение «тёплых» клиентов,
 					нуждающихся в вашем продукте</p>
-			</div>
-			<div class="info__item d-flex flex-column justify-content-center align-items-center col-12 col-sm-4 col-md-3 border border-dark rounded bg-primary p-2">
-				<img src="img/gear.svg" class="info__item-img img-fluid  w-25 h-25" alt="OPTIMIZATION">
-				<p class="info__item-text text-center text-break fs-5 fw-bolder">оптимизацию интерфейса сайта (он
+			</article>
+			<article class="info__item d-flex flex-column justify-content-center align-items-center col-12 col-sm-4 col-md-3 border border-dark bg-primary p-2">
+				<img src="img/gear.svg" class="info__item-img img-fluid" alt="OPTIMIZATION">
+				<p class="info__item-text text-center text-break fs-6 fs-sm-5 fw-bolder">оптимизацию интерфейса сайта (он
 					станет более удобным)</p>
-			</div>
-			<div class="info__item d-flex flex-column justify-content-center align-items-center col-12 col-sm-4 col-md-3 border border-dark rounded bg-primary p-2">
-				<img src="img/graph-up.svg" class="info__item-img img-fluid  w-25 h-25" alt="NEW MARKET">
-				<p class="info__item-text text-center text-break fs-5 fw-bolder">нахождение новых рынков сбыта
+			</article>
+			<article class="info__item d-flex flex-column justify-content-center align-items-center col-12 col-sm-4 col-md-3 border border-dark bg-primary p-2">
+				<img src="img/graph-up.svg" class="info__item-img img-fluid" alt="NEW MARKET">
+				<p class="info__item-text text-center text-break fs-6 fs-sm-5 fw-bolder">нахождение новых рынков сбыта
 					ваших товаров/услуг</p>
-			</div>
-			<div class="info__item d-flex flex-column justify-content-center align-items-center col-12 col-sm-4 col-md-3 border border-dark rounded bg-primary p-2">
-				<img src="img/person-plus.svg" class="info__item-img img-fluid  w-25 h-25" alt="CUSTOMERS PLUS">
-				<p class="info__item-text text-center text-break fs-5 fw-bolder">появление дополнительных клиентов,
+			</article>
+			<article class="info__item d-flex flex-column justify-content-center align-items-center col-12 col-sm-4 col-md-3 border border-dark bg-primary p-2">
+				<img src="img/person-plus.svg" class="info__item-img img-fluid" alt="CUSTOMERS PLUS">
+				<p class="info__item-text text-center text-break fs-6 fs-sm-5 fw-bolder">появление дополнительных клиентов,
 					а значит – рост продаж</p>
-			</div>
-			<div class="info__item d-flex flex-column justify-content-center align-items-center col-12 col-sm-4 col-md-3 border border-dark rounded bg-primary p-2">
-				<img src="img/stopwatch.svg" class="info__item-img img-fluid  w-25 h-25" alt="LONG TIME">
-				<p class="info__item-text text-center text-break fs-5 fw-bolder">отличие от контекстной рекламы,
+			</article>
+			<article class="info__item d-flex flex-column justify-content-center align-items-center col-12 col-sm-4 col-md-3 border border-dark bg-primary p-2">
+				<img src="img/stopwatch.svg" class="info__item-img img-fluid" alt="LONG TIME">
+				<p class="info__item-text text-center text-break fs-6 fs-sm-5 fw-bolder">отличие от контекстной рекламы,
 					эффект от SEO – длительный</p>
-			</div>
+			</article>
 		</div>
 
 	</div>
 </section>
 	<section id="order" class="order conatiner-fluid py-5 mb-5">
-	<!--ORDER INFO-->
+	<!--ORDER CALL INFO-->
 	<div class="row flex-column justify-content-center align-items-center">
-		<div class="col-12 col-sm-6 d-flex flex-column justify-content-center align-items-center">
-			<h2 class="order__title fs-2 text-center">Заказать звонок</h2>
-			<p class="order__text fs-3 text-center">Получите индивидуальное коммерческое предложение для вашего сайта</p>
+		<div class="col-12 col-sm-10 col-md-6 d-flex flex-column justify-content-center align-items-center">
+			<h2 class="order__title mb-4 fs-2 fw-bolder text-center">Заказать звонок</h2>
+			<p class="order__text mb-4 fs-3 text-center">Получите индивидуальное коммерческое предложение для вашего сайта</p>
 			<button type="button" class="btn btn-warning fs-4 fw-bold py-3" data-bs-toggle="modal"
 				data-bs-target="#orderCall">Позвоните мне</button>
 		</div>
@@ -272,54 +286,62 @@
 							</div>
 						</div>
 						<div class="col-12">
-							<button class="btn btn-primary" type="submit">Отправить</button>
+							<button class="btn btn-warning fw-bolder" type="submit">Отправить</button>
 						</div>
 					</form>
 					<!---->
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+					<button type="button" class="btn btn-secondary fw-bolder" data-bs-dismiss="modal">Закрыть</button>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 	<section class="block container py-5">
+	<!--BLOCK ABOUT TITLE-->
 	<div class="row d-flex justify-content-center justify-content-lg-between gap-3 mt-3">
-		<div class="col-10 col-md-8 col-lg-3 block__card d-flex flex-column align-items-center">
-				<img src="img/arrow-clockwise.svg" class="block__img my-4" alt="CHANGE">
-				<h5 class="fw-bold mb-4 ms-2">Ваш сайт никто не посещает и заявок — по нулям?</h5>
-				<ul class="block__list mb-5 me-2">
-					<li class="my-2"><span class="fs-3 lh-1">&bull;</span> Исправим это недоразумение, потому что мы опытная команда — в этой теме  с 2004 года</li>
-					<li class="my-2"><span class="fs-3 lh-1">&bull;</span> Ставим чёткие цели, применяем современные подходы к продвижению сайтов</li>
-					<li class="my-2"><span class="fs-3 lh-1">&bull;</span> Используем гибкие методы к ведению проектов Agile и Scrum чтобы быть максимально эффективными</li>
-				</ul>
-		</div>
-
-		<div class="col-10 col-md-8 col-lg-3 block__card d-flex flex-column align-items-center">
-				<img src="img/wrench.svg" class="block__img my-4" alt="FIX">
-				<h5 class="fw-bold mb-4 ms-2">Сайт работает плохо и выглядит непривлекательно?</h5>
-					<ul class="block__list mb-4 me-2">
-						<li class="my-2"><span class="fs-3 lh-1">&bull;</span> Чиним и воскрешаем нерабочие сайты, вдыхаем в них жизнь</li>
-						<li class="my-2"><span class="fs-3 lh-1">&bull;</span> Решаем задачи не с точки зрения программистов, а с точки зрения бизнеса: со всей отдачей погружаемся в нишу, анализируем рынок, изучаем конкурентов</li>
-						<li class="my-2"><span class="fs-3 lh-1">&bull;</span> В процессе работы делаем только нужное и важное</li>
-					</ul>
-		</div>
-
-		<div class="col-10 col-md-8 col-lg-3 block__card d-flex flex-column align-items-center">
-				<img src="img/emoji-frown.svg" class="block__img my-4" alt="BAD EXECUTOR">
-				<h5 class="fw-bold mb-4 ms-2">Уже связывались с недобросовестными "СЕОшниками"?</h5>
-					<ul class="block__list mb-4 me-2">
-						<li class="my-2"><span class="fs-3 lh-1">&bull;</span> Разговариваем на понятном языке без сложных терминов</li>
-						<li class="my-2"><span class="fs-3 lh-1">&bull;</span> Технический коллектив расположен в Белоруссии, что позволяет предложить вам доступную цену наряду с высоким качеством выполняемых работ</li>
-						<li class="my-2"><span class="fs-3 lh-1">&bull;</span> В отчётах предоставляем исключительно факты, без воды</li>
-					</ul>
-		</div>
-		
-		</div>
+		<article class="col-10 col-md-8 col-lg-3 block__card d-flex flex-column align-items-center">
+			<img src="img/arrow-clockwise.svg" class="block__img my-4" alt="CHANGE">
+			<h3 class="fw-bold mb-2 mb-sm-4 ms-2 fs-5 text-center text-sm-start">Ваш сайт никто не посещает и заявок — по
+				нулям?</h3>
+			<ul class="block__list mb-5 me-2">
+				<li class="my-2"><span class="fs-3 lh-1">&bull;</span> Исправим это недоразумение, потому что мы опытная команда
+					— в этой теме с 2004 года</li>
+				<li class="my-2"><span class="fs-3 lh-1">&bull;</span> Ставим чёткие цели, применяем современные подходы к
+					продвижению сайтов</li>
+				<li class="my-2"><span class="fs-3 lh-1">&bull;</span> Используем гибкие методы к ведению проектов Agile и Scrum
+					чтобы быть максимально эффективными</li>
+			</ul>
+		</article>
+		<article class="col-10 col-md-8 col-lg-3 block__card d-flex flex-column align-items-center">
+			<img src="img/wrench.svg" class="block__img my-4" alt="FIX">
+			<h3 class="fw-bold mb-2 mb-sm-4 ms-2 fs-5 text-center text-sm-start">Сайт работает плохо и выглядит
+				непривлекательно?</h3>
+			<ul class="block__list mb-4 me-2">
+				<li class="my-2"><span class="fs-3 lh-1">&bull;</span> Чиним и воскрешаем нерабочие сайты, вдыхаем в них жизнь
+				</li>
+				<li class="my-2"><span class="fs-3 lh-1">&bull;</span> Решаем задачи не с точки зрения программистов, а с точки
+					зрения бизнеса: со всей отдачей погружаемся в нишу, анализируем рынок, изучаем конкурентов</li>
+				<li class="my-2"><span class="fs-3 lh-1">&bull;</span> В процессе работы делаем только нужное и важное</li>
+			</ul>
+		</article>
+		<article class="col-10 col-md-8 col-lg-3 block__card d-flex flex-column align-items-center">
+			<img src="img/emoji-frown.svg" class="block__img my-4" alt="BAD EXECUTOR">
+			<h3 class="fw-bold mb-2 mb-sm-4 ms-2 fs-5 text-center text-sm-start">Уже связывались с недобросовестными
+				"СЕОшниками"?</h3>
+			<ul class="block__list mb-4 me-2">
+				<li class="my-2"><span class="fs-3 lh-1">&bull;</span> Разговариваем на понятном языке без сложных терминов</li>
+				<li class="my-2"><span class="fs-3 lh-1">&bull;</span> Технический коллектив расположен в Белоруссии, что
+					позволяет предложить вам доступную цену наряду с высоким качеством выполняемых работ</li>
+				<li class="my-2"><span class="fs-3 lh-1">&bull;</span> В отчётах предоставляем исключительно факты, без воды
+				</li>
+			</ul>
+		</article>
+	</div>
 </section>
 	<section class="letter container-fluid py-5 my-5">
-	<h2 class="letter__title w-100 fs-2 fw-bold text-center">Заказать услугу</h2>
+	<h2 class="letter__title w-100 mb-4 fs-2 fw-bold text-center">Заказать услугу</h2>
 	<div class="row justify-content-center">
 		<form class="letter__form col-12 col-sm-6 g-3 needs-validation" id="formLetter" name="formLetter" method="POST" novalidate>
 			<div class="row">
@@ -391,12 +413,11 @@
 	<div class="container">
 		<div class="row flex-column justify-content-center align-items-center">
 			<div class="col-12 col-sm-6 d-flex flex-column justify-content-center align-items-center">
-				<h2 class="approach__title fs-2 fw-bolder text-center">Делаем только нужное</h2>
-				<p class="approach__subtitle fs-3 text-center text-muted">100% БЕЛЫЙ ПОДХОД</p>
+				<h2 class="approach__title mb-4 fs-2 fw-bolder text-center">Делаем только нужное</h2>
+				<p class="approach__subtitle fs-3 text-center text-muted text-uppercase">100% белый подход</p>
 			</div>
 		</div>
 	</div>
-
 	<!--APPROACH ITEMS-->
 	<div class="container">
 		<div class="row gap-5 d-flex align-items-stretch justify-content-center">
@@ -409,12 +430,12 @@
 					</picture>
 				</figure>
 				<h3 class="approach__item-title flex-grow-1 p-3 fs-5 text-break">Продвижение сайта в top</h3>
-				<p class="approach__item-text p-3">Принципиальная позиция «Велес Диджитал» - наполнение сайта такими текстами, чтобы они нравились и
+				<p class="approach__item-text p-3">Принципиальная позиция «Велес Диджитал» - наполнение сайта такими текстами,
+					чтобы они нравились и
 					поисковым
 					системам, и людям. Ведь вкладываться в продвижение сайта есть смысл, только когда он интересен привлечённым
 					через поисковик посетителям.</p>
 			</article>
-
 			<article class="approach__item col-12 col-md-5 d-flex flex-column p-0">
 				<figure class="figure w-100">
 					<picture>
@@ -425,12 +446,12 @@
 				</figure>
 				<h3 class="approach__item-title flex-grow-1 p-3 fs-5 text-break">Продвижение сайта в яндексе и гугле недорого
 				</h3>
-				<p class="approach__item-text p-3">«Велес Диджитал» понимает, что ваш бизнес должен приносить выгоду. Цена за продвижение сайта в
+				<p class="approach__item-text p-3">«Велес Диджитал» понимает, что ваш бизнес должен приносить выгоду. Цена за
+					продвижение сайта в
 					яндексе (или
 					гугле) в топ 10 устанавливается таким образом, чтобы вы легко её отбили за счёт роста продаж через сайт. Мы
 					не берём «рекламной наценки».</p>
 			</article>
-
 			<article class="approach__item col-12 col-md-5 d-flex flex-column p-0">
 				<figure class="figure w-100">
 					<picture>
@@ -441,9 +462,10 @@
 				</figure>
 				<h3 class="approach__item-title flex-grow-1 p-3 fs-5 text-break">Создание и продвижение сайтов
 				</h3>
-				<p class="approach__item-text p-3">Сео-продвижение уже существующего сайта, о котором у поисковых машин имеется сложившееся «мнение» - только один из вариантов. Гораздо интересней и выгодней заказать комплекс услуг: создание и продвижение сайта. Мы успешно продвигаем и раскручиваем как «старые», так и «новые» сайты.</p>
+				<p class="approach__item-text p-3">Сео-продвижение уже существующего сайта, о котором у поисковых машин имеется
+					сложившееся «мнение» - только один из вариантов. Гораздо интересней и выгодней заказать комплекс услуг:
+					создание и продвижение сайта. Мы успешно продвигаем и раскручиваем как «старые», так и «новые» сайты.</p>
 			</article>
-
 			<article class="approach__item col-12 col-md-5 d-flex flex-column p-0">
 				<figure class="figure w-100">
 					<picture>
@@ -454,9 +476,11 @@
 				</figure>
 				<h3 class="approach__item-title flex-grow-1 p-3 fs-5 text-break">Ручной сбор семантического ядра
 				</h3>
-				<p class="approach__item-text p-3">Кропотливо вручную собираем запросы, по которым нужно продвигать ваш сайт. В отбор идут только те запросы, которые приведут на сайт потенциальных клиентов. Сайт будет с первых дней существования заполняться «правильными» текстами, которые постепенно выведут его в топ одной или обеих поисковых систем.</p>
+				<p class="approach__item-text p-3">Кропотливо вручную собираем запросы, по которым нужно продвигать ваш сайт. В
+					отбор идут только те запросы, которые приведут на сайт потенциальных клиентов. Сайт будет с первых дней
+					существования заполняться «правильными» текстами, которые постепенно выведут его в топ одной или обеих
+					поисковых систем.</p>
 			</article>
-
 			<article class="approach__item col-12 col-md-5 d-flex flex-column p-0">
 				<figure class="figure w-100">
 					<picture>
@@ -467,9 +491,10 @@
 				</figure>
 				<h3 class="approach__item-title flex-grow-1 p-3 fs-5 text-break">Аналитика и отчетность
 				</h3>
-				<p class="approach__item-text p-3">Ежемесячно анализируем позиции в поисковых системах, а также трафик и поведение пользователей на вашем сайте. Предоставляем отчёты о проделанной работе, формируем дальнейшие рекомендации.</p>
+				<p class="approach__item-text p-3">Ежемесячно анализируем позиции в поисковых системах, а также трафик и
+					поведение пользователей на вашем сайте. Предоставляем отчёты о проделанной работе, формируем дальнейшие
+					рекомендации.</p>
 			</article>
-
 			<article class="approach__item col-12 col-md-5 d-flex flex-column p-0">
 				<figure class="figure w-100">
 					<picture>
@@ -480,18 +505,19 @@
 				</figure>
 				<h3 class="approach__item-title flex-grow-1 p-3 fs-5 text-break">Глубокая оптимизация сайта
 				</h3>
-				<p class="approach__item-text p-3">Проводим технический аудит, выявляем уязвимые места сайта, находим ошибки, проблемы. Составляем план работ на несколько месяцев. Осуществляем переработку сайта. Проводим его техническую оптимизацию, изменяем содержимое сайта. При необходимости меняем структуру разделов/подразделов.</p>
+				<p class="approach__item-text p-3">Проводим технический аудит, выявляем уязвимые места сайта, находим ошибки,
+					проблемы. Составляем план работ на несколько месяцев. Осуществляем переработку сайта. Проводим его техническую
+					оптимизацию, изменяем содержимое сайта. При необходимости меняем структуру разделов/подразделов.</p>
 			</article>
 		</div>
 	</div>
-
 </section>
 	<section id="procedure" class="procedure container-fluid my-5 py-5">
 	<!--PROCEDURE TITLE-->
 	<div class="procedure__info container h-100">
 		<div class="row flex-column justify-content-center align-items-center">
 			<div class="col-12 d-flex flex-column justify-content-center align-items-center">
-				<h2 class="procedure__title fs-2 fw-bolder text-center">Работы, которые мы делаем по договору</h2>
+				<h2 class="procedure__title mb-4 fs-2 fw-bolder text-center">Работы, которые мы делаем по договору</h2>
 				<p class="procedure__subtitle fs-3 text-center">В рамках SEO продвижения вашего сайта</p>
 			</div>
 		</div>
@@ -910,17 +936,16 @@
 		</div>
 	</div>
 </section>
-	<section class="team container-fluid my-5 py-5">
+	<section id="team" class="team container-fluid my-5 py-5">
 	<!--TEAM TITLE-->
 	<div class="team__head container h-100 mb-4">
 		<div class="row flex-column justify-content-center align-items-center">
 			<div class="col-12 d-flex flex-column justify-content-center align-items-center">
-				<h2 class="team__title fs-2 fw-bolder text-center">Наша команда</h2>
+				<h2 class="team__title mb-4 fs-2 fw-bolder text-center">Наша команда</h2>
 				<p class="team__subtitle fs-3 text-center">Кто именно работает над вашим проектом</p>
 			</div>
 		</div>
 	</div>
-
 	<!--TEAM INFO-->
 	<div class="team__info container">
 		<div class="row justify-content-between">
@@ -953,7 +978,7 @@
 	<div class="price__head container h-100 mb-4">
 		<div class="row flex-column justify-content-center align-items-center">
 			<div class="col-12 d-flex flex-column justify-content-center align-items-center">
-				<h2 class="price__title fs-2 fw-bolder text-center">Тарифы</h2>
+				<h2 class="price__title mb-4 fs-2 fw-bolder text-center">Тарифы</h2>
 				<p class="price__subtitle fs-3 text-center">Выберите оптимальный пакет услуг</p>
 			</div>
 		</div>
@@ -1037,7 +1062,7 @@
 	<div class="review__head container h-100 mb-4">
 		<div class="row flex-column justify-content-center align-items-center">
 			<div class="col-12 d-flex flex-column justify-content-center align-items-center">
-				<h2 class="review__title fs-2 fw-bolder text-center">Отзывы</h2>
+				<h2 class="review__title mb-4 fs-2 fw-bolder text-center">Отзывы</h2>
 			</div>
 		</div>
 	</div>
@@ -1097,11 +1122,11 @@
 	</div>
 </section>
 	<section id="order" class="order conatiner-fluid py-5 mb-5">
-	<!--ORDER INFO-->
+	<!--ORDER CALL INFO-->
 	<div class="row flex-column justify-content-center align-items-center">
-		<div class="col-12 col-sm-6 d-flex flex-column justify-content-center align-items-center">
-			<h2 class="order__title fs-2 text-center">Заказать звонок</h2>
-			<p class="order__text fs-3 text-center">Получите индивидуальное коммерческое предложение для вашего сайта</p>
+		<div class="col-12 col-sm-10 col-md-6 d-flex flex-column justify-content-center align-items-center">
+			<h2 class="order__title mb-4 fs-2 fw-bolder text-center">Заказать звонок</h2>
+			<p class="order__text mb-4 fs-3 text-center">Получите индивидуальное коммерческое предложение для вашего сайта</p>
 			<button type="button" class="btn btn-warning fs-4 fw-bold py-3" data-bs-toggle="modal"
 				data-bs-target="#orderCall">Позвоните мне</button>
 		</div>
@@ -1150,13 +1175,13 @@
 							</div>
 						</div>
 						<div class="col-12">
-							<button class="btn btn-primary" type="submit">Отправить</button>
+							<button class="btn btn-warning fw-bolder" type="submit">Отправить</button>
 						</div>
 					</form>
 					<!---->
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+					<button type="button" class="btn btn-secondary fw-bolder" data-bs-dismiss="modal">Закрыть</button>
 				</div>
 			</div>
 		</div>
@@ -1167,7 +1192,7 @@
 <div class="review__head container my-5">
 	<div class="row flex-column justify-content-center align-items-center">
 		<div class="col-12 d-flex flex-column justify-content-center align-items-center">
-			<h2 class="review__title fs-2 fw-bolder text-center">Часто задаваемые вопросы</h2>
+			<h2 class="review__title mb-4 fs-2 fw-bolder text-center">Часто задаваемые вопросы</h2>
 		</div>
 	</div>
 </div>
@@ -1250,7 +1275,7 @@
 </div>
 </section>
 	</main>
-	<footer class="footer container-fluid py-5">
+	<footer id="footer" class="footer container-fluid pt-5 pb-2">
 	<div class="container">
 		<div class="row justify-content-between align-items-end">
 			<!-- LOGO -->
@@ -1260,20 +1285,20 @@
 				</a>
 				<ul class="footer__contact navbar-nav d-flex flex-column">
 					<li class="footer__contact-item mb-2">
-						<a href="mailto:info@velesdigital.ru" class="footer__contact-link w-100 d-flex  align-items-center"
+						<a href="mailto:info@velesdigital.ru" class="footer__contact-link d-flex align-items-center"
 							target="_blank">
 							<img src="img/envelope-fill.svg" alt="EMAIL">
 							<span class="ps-2 fw-bolder">info@velesdigital.ru</span>
 						</a>
 					</li>
 					<li class="footer__contact-item  mb-2">
-						<a href="tel:+79219616651" class="footer__contact-link  w-100 d-flex  align-items-center">
+						<a href="tel:+79219616651" class="footer__contact-link d-flex align-items-center">
 							<img src="img/telephone-fill.svg" alt="PHONE">
 							<span class="ps-2 fw-bolder">+7 (921) 961-66-51</span>
 						</a>
 					</li>
 					<li class="footer__contact-item ">
-						<a href="https://yandex.ru/maps/-/CCUQnOwf0A" class="footer__contact-link  w-100 d-flex  align-items-center">
+						<a href="https://yandex.ru/maps/-/CCUQnOwf0A" target="_blank" class="footer__contact-link d-flex align-items-center">
 							<img src="img/building.svg" alt="OFICCE">
 							<span class="ps-2 fw-bolder">г. Кемерово, пр-кт Кузнецкий 115А</span>
 						</a>
@@ -1312,7 +1337,9 @@
 					</li>
 				</ul>
 			</div>
-
+		</div>
+		<div class="row mt-4">
+			<p class="copyrights">&copy; 2021 «Велес Диджитал: Готовые цифровые решения. Ваш надежный IT партнер»</p>
 		</div>
 	</div>
 </footer>
