@@ -5,7 +5,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 $name=$_POST['nameCall'];
 $phone=$_POST['phoneCall'];
 $accept=$_POST['personDataOrder'];
-$mailSeller='my_test_localhost@mail.ru';
+$mailSeller='mail@mail.ru';
 
 $messageMail='
 <html>
@@ -42,8 +42,8 @@ $mail = new PHPMailer;
 $mail->isSMTP(); 
 $mail->Host = 'smtp.mail.ru'; 
 $mail->SMTPAuth = true; 
-$mail->Username = 'my_test_localhost@mail.ru';
-$mail->Password = '5^bG6w3o';
+$mail->Username = 'mail@mail.ru';
+$mail->Password = 'PASSWORD';
 $mail->Port = 465;
 $mail->SMTPSecure = 'ssl';
 
