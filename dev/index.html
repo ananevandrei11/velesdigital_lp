@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Document</title>
+	<title>Велес Диджитал SEO</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="css/vendor/vendors.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -117,7 +118,7 @@
 					</div>
 					<div class="modal-body">
 						<!--MODAL FORM-->
-						<form class="row g-3 needs-validation" id="formOrderService" name="formOrderService" method="POST"
+						<form class="row g-3 needs-validation" id="formOrderService" name="formOrderService" method="POST" action="php/orderService.php"
 							novalidate>
 							<div class="col-12">
 								<label for="nameService" class="form-label">ФИО*:</label>
@@ -171,7 +172,7 @@
 								</div>
 							</div>
 							<div class="col-12">
-								<button class="btn btn-warning fw-bolder" type="submit">Отправить</button>
+								<button class="btn btn-warning fw-bolder" type="submit" disabled>Отправить</button>
 							</div>
 						</form>
 						<!---->
@@ -253,7 +254,7 @@
 				</div>
 				<div class="modal-body">
 					<!--MODAL FORM-->
-					<form class="row g-3 needs-validation" id="formOrderCall" name="formOrderCall" method="POST" novalidate>
+					<form class="row g-3 needs-validation" id="formOrderCall" name="formOrderCall" method="POST" action="php/orderCall.php" novalidate>
 						<div class="col-12">
 							<label for="nameCall" class="form-label">ФИО*:</label>
 							<input type="text" class="form-control" id="nameCall" name="nameCall" placeholder="ФИО" required>
@@ -276,7 +277,7 @@
 						</div>
 						<div class="col-12">
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="true" id="personDataOrder" required>
+								<input class="form-check-input" type="checkbox" value="true" id="personDataCall" required>
 								<label class="form-check-label" for="personDataOrder">
 									Я согласен на обработку персональных данных
 								</label>
@@ -286,7 +287,7 @@
 							</div>
 						</div>
 						<div class="col-12">
-							<button class="btn btn-warning fw-bolder" type="submit">Отправить</button>
+							<button class="btn btn-warning fw-bolder" type="submit" disabled>Отправить</button>
 						</div>
 					</form>
 					<!---->
@@ -343,7 +344,7 @@
 	<section class="letter container-fluid py-5 my-5">
 	<h2 class="letter__title w-100 mb-4 fs-2 fw-bold text-center">Заказать услугу</h2>
 	<div class="row justify-content-center">
-		<form class="letter__form col-12 col-sm-6 g-3 needs-validation" id="formLetter" name="formLetter" method="POST" novalidate>
+		<form class="letter__form col-12 col-sm-6 g-3 needs-validation" id="formLetter" name="formLetter" method="POST" action="php/orderLetter.php" novalidate>
 			<div class="row">
 			<div class="col-12 mb-3">
 				<label for="nameLetter" class="form-label">ФИО*:</label>
@@ -402,7 +403,7 @@
 				</div>
 			</div>
 			<div class="col-12 mb-3">
-				<button class="btn btn-warning fs-5 fw-bolder" type="submit">Отправить</button>
+				<button class="btn btn-warning fs-5 fw-bolder" type="submit" disabled>Отправить</button>
 			</div>
 		</div>
 		</form>
@@ -1142,7 +1143,7 @@
 				</div>
 				<div class="modal-body">
 					<!--MODAL FORM-->
-					<form class="row g-3 needs-validation" id="formOrderCall" name="formOrderCall" method="POST" novalidate>
+					<form class="row g-3 needs-validation" id="formOrderCall" name="formOrderCall" method="POST" action="php/orderCall.php" novalidate>
 						<div class="col-12">
 							<label for="nameCall" class="form-label">ФИО*:</label>
 							<input type="text" class="form-control" id="nameCall" name="nameCall" placeholder="ФИО" required>
@@ -1165,7 +1166,7 @@
 						</div>
 						<div class="col-12">
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="true" id="personDataOrder" required>
+								<input class="form-check-input" type="checkbox" value="true" id="personDataCall" required>
 								<label class="form-check-label" for="personDataOrder">
 									Я согласен на обработку персональных данных
 								</label>
@@ -1175,7 +1176,7 @@
 							</div>
 						</div>
 						<div class="col-12">
-							<button class="btn btn-warning fw-bolder" type="submit">Отправить</button>
+							<button class="btn btn-warning fw-bolder" type="submit" disabled>Отправить</button>
 						</div>
 					</form>
 					<!---->

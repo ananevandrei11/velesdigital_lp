@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -24,10 +24,7 @@ ul {
   list-style: none;
 }
 
-body,
-.modal,
-.modal-open,
-.header {
+body, .modal, .modal-open, .header {
   padding-right: 0px !important;
 }
 
@@ -48,14 +45,13 @@ body,
   height: 25px;
 }
 
-.header__logo-img img,
-.header__social-link img {
+.header__logo-img img, .header__social-link img {
   width: 100%;
   height: 100%;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   -o-object-fit: fill;
-  object-fit: fill;
+     object-fit: fill;
 }
 
 .header .nav-link {
@@ -99,8 +95,7 @@ body,
   min-height: 200px;
 }
 
-.order__title,
-.order__text {
+.order__title, .order__text {
   color: #fff;
 }
 
@@ -129,7 +124,7 @@ body,
 
 .approach__item-title {
   -ms-flex-preferred-size: 1;
-  flex-basis: 1;
+      flex-basis: 1;
 }
 
 .procedure {
@@ -161,7 +156,7 @@ body,
   background-color: transparent;
   border-color: transparent !important;
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .procedure .accordion-button::after {
@@ -186,9 +181,9 @@ body,
 
 .team__figure img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
 }
 
 .price {
@@ -214,8 +209,7 @@ body,
   color: #00142d;
 }
 
-.price__table-td:nth-of-type(2),
-.price__table-td:nth-of-type(3) {
+.price__table-td:nth-of-type(2), .price__table-td:nth-of-type(3) {
   font-weight: bolder;
   font-size: 125%;
 }
@@ -231,8 +225,7 @@ body,
   background-color: rgba(0, 20, 45, 0.85);
 }
 
-.faq__article,
-.faq__article .accordion-button {
+.faq__article, .faq__article .accordion-button {
   color: #fff;
 }
 
@@ -247,7 +240,7 @@ body,
   background-color: transparent;
   border-color: transparent !important;
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .faq .accordion-button::after {
@@ -297,9 +290,9 @@ body,
   width: 100%;
   height: 100%;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   -o-object-fit: fill;
-  object-fit: fill;
+     object-fit: fill;
 }
 
 @media screen and (max-width: 576px) {
@@ -309,34 +302,24 @@ body,
     background: -o-linear-gradient(left, #1e4b73, rgba(255, 255, 255, 0)), url("../img/banner-min.jpg") center/100% 100% no-repeat;
     background: linear-gradient(to right, #1e4b73, rgba(255, 255, 255, 0)), url("../img/banner-min.jpg") center/100% 100% no-repeat;
   }
-
   .letter {
     background: -webkit-gradient(linear, left top, right top, from(rgba(0, 20, 45, 0.85)), to(rgba(0, 20, 45, 0.85))), url("../img/seo/seo_img_1-min.jpg") center/cover no-repeat;
     background: -o-linear-gradient(left, rgba(0, 20, 45, 0.85) 0%, rgba(0, 20, 45, 0.85) 100%), url("../img/seo/seo_img_1-min.jpg") center/cover no-repeat;
     background: linear-gradient(90deg, rgba(0, 20, 45, 0.85) 0%, rgba(0, 20, 45, 0.85) 100%), url("../img/seo/seo_img_1-min.jpg") center/cover no-repeat;
   }
-
   .procedure {
     background: -webkit-gradient(linear, left top, right top, from(rgba(0, 20, 45, 0.75)), to(rgba(0, 20, 45, 0.75))), url("../img/seo/marketing-min.png") center/cover no-repeat;
     background: -o-linear-gradient(left, rgba(0, 20, 45, 0.75) 0%, rgba(0, 20, 45, 0.75) 100%), url("../img/seo/marketing-min.png") center/cover no-repeat;
     background: linear-gradient(90deg, rgba(0, 20, 45, 0.75) 0%, rgba(0, 20, 45, 0.75) 100%), url("../img/seo/marketing-min.png") center/cover no-repeat;
   }
-
   .price {
     background: -webkit-gradient(linear, left top, right top, from(rgba(0, 20, 45, 0.75)), to(rgba(0, 20, 45, 0.75))), url("../img/seo/store-min.png") center/cover no-repeat;
     background: -o-linear-gradient(left, rgba(0, 20, 45, 0.75) 0%, rgba(0, 20, 45, 0.75) 100%), url("../img/seo/store-min.png") center/cover no-repeat;
     background: linear-gradient(90deg, rgba(0, 20, 45, 0.75) 0%, rgba(0, 20, 45, 0.75) 100%), url("../img/seo/store-min.png") center/cover no-repeat;
   }
-
-  .price__table,
-  .price__table-th,
-  .price__table-td,
-  .price__table-td:nth-of-type(2),
-  .price__table-td:nth-of-type(3),
-  .price__table .btn {
+  .price__table, .price__table-th, .price__table-td, .price__table-td:nth-of-type(2), .price__table-td:nth-of-type(3), .price__table .btn {
     font-size: 80%;
   }
-
   .faq {
     background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0.75))), url("../img/seo/seo-2-min.jpg") center/cover no-repeat;
     background: -o-linear-gradient(left, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("../img/seo/seo-2-min.jpg") center/cover no-repeat;

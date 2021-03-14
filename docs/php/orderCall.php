@@ -4,7 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 // Данные
 $name=$_POST['nameCall'];
 $phone=$_POST['phoneCall'];
-$accept=$_POST['personDataOrder'];
+$accept=$_POST['personDataCall'];
 $mailSeller='mail@mail.ru';
 
 $messageMail='
