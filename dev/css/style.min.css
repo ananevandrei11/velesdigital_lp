@@ -68,13 +68,12 @@ body, .modal, .modal-open, .header {
 
 .top {
   margin-top: 80px;
-  background: -webkit-gradient(linear, left top, right top, from(#1e4b73), to(rgba(255, 255, 255, 0))), url("../img/banner.jpg") 70%/cover no-repeat;
-  background: -o-linear-gradient(left, #1e4b73, rgba(255, 255, 255, 0)), url("../img/banner.jpg") 70%/cover no-repeat;
-  background: linear-gradient(to right, #1e4b73, rgba(255, 255, 255, 0)), url("../img/banner.jpg") 70%/cover no-repeat;
+  background: url("../img/bg_1.jpg") center/cover no-repeat;
 }
 
-.top__main {
-  color: #fff;
+.top__main .top__item {
+  color: #00142d;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .info__item {
@@ -296,12 +295,6 @@ body, .modal, .modal-open, .header {
 }
 
 @media screen and (max-width: 576px) {
-  .top {
-    background-size: 250% 100%;
-    background: -webkit-gradient(linear, left top, right top, from(#1e4b73), to(rgba(255, 255, 255, 0))), url("../img/banner-min.jpg") center/100% 100% no-repeat;
-    background: -o-linear-gradient(left, #1e4b73, rgba(255, 255, 255, 0)), url("../img/banner-min.jpg") center/100% 100% no-repeat;
-    background: linear-gradient(to right, #1e4b73, rgba(255, 255, 255, 0)), url("../img/banner-min.jpg") center/100% 100% no-repeat;
-  }
   .letter {
     background: -webkit-gradient(linear, left top, right top, from(rgba(0, 20, 45, 0.85)), to(rgba(0, 20, 45, 0.85))), url("../img/seo/seo_img_1-min.jpg") center/cover no-repeat;
     background: -o-linear-gradient(left, rgba(0, 20, 45, 0.85) 0%, rgba(0, 20, 45, 0.85) 100%), url("../img/seo/seo_img_1-min.jpg") center/cover no-repeat;
