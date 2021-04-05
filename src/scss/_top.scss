@@ -1,8 +1,7 @@
 .top {
 	margin-top: 80px;
 	//background: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), url('../img/bg_1.jpg') 70% / cover no-repeat;
-  //background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../img/bg_1.jpg') 70% / cover no-repeat;
-  background: url('../img/bg_1.jpg') center / cover no-repeat;
+  background: url('../img/bg_top.png') center / cover no-repeat;
 	&__main &__item {
 		color:rgb(0, 20, 45);
     background-color: rgba(255,255,255, 0.9)
@@ -12,6 +11,5 @@
 	.top {
 		//background-size: 250% 100%;
 		//background: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), url('../img/bg_4.jpg') center / cover no-repeat;
-    //background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../img/bg_1.jpg') 70% / cover no-repeat;
 	}
 }
