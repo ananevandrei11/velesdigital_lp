@@ -329,6 +329,20 @@ body, .modal, .modal-open, .header {
      object-fit: fill;
 }
 
+@media screen and (max-width: 1200px) {
+  .video-block__container {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .video-block__container {
+    width: 90%;
+    height: 90%;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .video-block__container {
     width: 100%;

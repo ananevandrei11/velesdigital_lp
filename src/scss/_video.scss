@@ -19,6 +19,24 @@
 	}
 }
 
+@media screen and (max-width:1200px) {
+	.video-block {
+		&__container {
+			width: 80%;
+			height: 80%;
+		}
+	}
+}
+
+@media screen and (max-width:992px) {
+	.video-block {
+		&__container {
+			width: 90%;
+			height: 90%;
+		}
+	}
+}
+
 @media screen and (max-width:576px) {
 	.video-block {
 		&__container {
