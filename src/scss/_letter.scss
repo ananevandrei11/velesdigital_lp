@@ -1,11 +1,16 @@
 .letter {
 	min-height: 200px;
-	background: linear-gradient(90deg, rgba(0,20,45,0.85) 0%, rgba(0,20,45,0.85) 100%), url("../img/seo/seo_img_1.jpg") center / cover no-repeat;
+	//background: linear-gradient(90deg, rgba(0,20,45,0.85) 0%, rgba(0,20,45,0.85) 100%), url("../img/seo_img.png") center / cover no-repeat;
+	background: url("../img/seo_img.png") center / cover no-repeat;
 	color: #fff;
+	&__container {
+		background-color: rgba(0, 0, 0, 0.65)
+	}
 }
 
 @media screen and (max-width: 576px) {
 	.letter {
-		background: linear-gradient(90deg, rgba(0,20,45,0.85) 0%, rgba(0,20,45,0.85) 100%), url("../img/seo/seo_img_1-min.jpg") center / cover no-repeat;
+		//background: linear-gradient(90deg, rgba(0,20,45,0.85) 0%, rgba(0,20,45,0.85) 100%), url("../img/seo/seo_img_1-min.jpg") center / cover no-repeat;
+		background: url("../img/seo_img-min.png") center / 200% 125% no-repeat;
 	}
 }

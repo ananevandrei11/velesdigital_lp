@@ -1,5 +1,5 @@
 .faq {
-	background:linear-gradient(90deg, rgba(255, 255, 255, 0.90) 0%, rgba(255, 255, 255, 0.90) 100%), url("../img/seo/seo-2.jpg") center / cover no-repeat;
+	//background:linear-gradient(90deg, rgba(255, 255, 255, 0.90) 0%, rgba(255, 255, 255, 0.90) 100%), url("../img/seo/seo-2.jpg") center / cover no-repeat;
 	margin-top: -3rem !important;
 	&__article {
 		background-color: rgba(0, 20, 45, 0.85);
@@ -27,6 +27,6 @@
 
 @media screen and (max-width: 576px) {
 	.faq {
-		background:linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("../img/seo/seo-2-min.jpg") center / cover no-repeat;
+		//background:linear-gradient(90deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%), url("../img/seo/seo-2-min.jpg") center / cover no-repeat;
 	}
 }

@@ -1,64 +1,68 @@
 <section id="order" class="order conatiner-fluid py-5 mb-5">
-	<!--ORDER CALL INFO-->
-	<div class="row flex-column justify-content-center align-items-center">
-		<div class="col-12 col-sm-10 col-md-6 d-flex flex-column justify-content-center align-items-center">
-			<h2 class="order__title mb-4 fs-2 fw-bolder text-center">Заказать звонок</h2>
-			<p class="order__text mb-4 fs-3 text-center">Получите индивидуальное коммерческое предложение для вашего сайта</p>
-			<button type="button" class="btn btn-warning fs-4 fw-bold py-3" data-bs-toggle="modal"
-				data-bs-target="#orderCall">Позвоните мне</button>
+	<div class="order__container col-10 col-sm-8 mx-auto p-4">
+		<!--ORDER CALL INFO-->
+		<div class="row flex-column justify-content-center align-items-center">
+			<div class="col-12 col-sm-10 d-flex flex-column justify-content-center align-items-center">
+				<h2 class="order__title mb-4 fs-2 fw-bolder text-center">Заказать звонок</h2>
+				<p class="order__text mb-4 fs-3 text-center">Получите индивидуальное коммерческое предложение для вашего сайта
+				</p>
+				<button type="button" class="btn btn-warning fs-4 fw-bold py-3" data-bs-toggle="modal"
+					data-bs-target="#orderCall">Позвоните мне</button>
+			</div>
 		</div>
-	</div>
 
-	<!-- MODAL FOR ORDER -->
-	<div class="modal fade" id="orderCall" tabindex="-1" aria-labelledby="orderCallLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="orderCallLabel">Заказ звонка</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<!--MODAL FORM-->
-					<form class="row g-3 needs-validation" id="formOrderCall" name="formOrderCall" method="POST" action="php/orderCall.php" novalidate>
-						<div class="col-12">
-							<label for="nameCall" class="form-label">ФИО*:</label>
-							<input type="text" class="form-control" id="nameCall" name="nameCall" placeholder="ФИО" required>
-							<div class="valid-feedback">
-								Отлично!
-							</div>
-							<div class="invalid-feedback">
-								Пожалуйста, введите Ваше имя
-							</div>
-						</div>
-						<div class="col-12">
-							<label for="phoneCall" class="form-label">Телефон*:</label>
-							<input type="text" class="form-control" id="phoneCall" name="phoneCall" required>
-							<div class="valid-feedback">
-								Отлично!
-							</div>
-							<div class="invalid-feedback">
-								Пожалуйста, введите Ваш номер телефона
-							</div>
-						</div>
-						<div class="col-12">
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="true" id="personDataCall" required>
-								<label class="form-check-label" for="personDataOrder">
-									Я согласен на обработку персональных данных
-								</label>
+		<!-- MODAL FOR ORDER -->
+		<div class="modal fade" id="orderCall" tabindex="-1" aria-labelledby="orderCallLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="orderCallLabel">Заказ звонка</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<!--MODAL FORM-->
+						<form class="row g-3 needs-validation" id="formOrderCall" name="formOrderCall" method="POST"
+							action="php/orderCall.php" novalidate>
+							<div class="col-12">
+								<label for="nameCall" class="form-label">ФИО*:</label>
+								<input type="text" class="form-control" id="nameCall" name="nameCall" placeholder="ФИО" required>
+								<div class="valid-feedback">
+									Отлично!
+								</div>
 								<div class="invalid-feedback">
-									Пожалуйста, дайте Ваше согласие на обработку персональных данных
+									Пожалуйста, введите Ваше имя
 								</div>
 							</div>
-						</div>
-						<div class="col-12">
-							<button class="btn btn-warning fw-bolder" type="submit" disabled>Отправить</button>
-						</div>
-					</form>
-					<!---->
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary fw-bolder" data-bs-dismiss="modal">Закрыть</button>
+							<div class="col-12">
+								<label for="phoneCall" class="form-label">Телефон*:</label>
+								<input type="text" class="form-control" id="phoneCall" name="phoneCall" required>
+								<div class="valid-feedback">
+									Отлично!
+								</div>
+								<div class="invalid-feedback">
+									Пожалуйста, введите Ваш номер телефона
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="true" id="personDataCall" required>
+									<label class="form-check-label" for="personDataOrder">
+										Я согласен на обработку персональных данных
+									</label>
+									<div class="invalid-feedback">
+										Пожалуйста, дайте Ваше согласие на обработку персональных данных
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<button class="btn btn-warning fw-bolder" type="submit" disabled>Отправить</button>
+							</div>
+						</form>
+						<!---->
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary fw-bolder" data-bs-dismiss="modal">Закрыть</button>
+					</div>
 				</div>
 			</div>
 		</div>
