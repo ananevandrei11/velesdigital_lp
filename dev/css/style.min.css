@@ -73,7 +73,11 @@ body, .modal, .modal-open, .header {
 
 .top__main .top__item {
   color: #00142d;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+.top__item_price {
+  color: #ac2e37;
 }
 
 .info {
@@ -247,9 +251,11 @@ body, .modal, .modal-open, .header {
 }
 
 .price {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 20, 45, 0.75)), to(rgba(0, 20, 45, 0.75))), url("../img/seo/store.png") center/cover no-repeat;
-  background: -o-linear-gradient(left, rgba(0, 20, 45, 0.75) 0%, rgba(0, 20, 45, 0.75) 100%), url("../img/seo/store.png") center/cover no-repeat;
-  background: linear-gradient(90deg, rgba(0, 20, 45, 0.75) 0%, rgba(0, 20, 45, 0.75) 100%), url("../img/seo/store.png") center/cover no-repeat;
+  background: url("../img/seo_img.png") center/cover no-repeat;
+}
+
+.price__container {
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .price__head {
@@ -279,7 +285,7 @@ body, .modal, .modal-open, .header {
 }
 
 .faq__article {
-  background-color: rgba(0, 20, 45, 0.85);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .faq__article, .faq__article .accordion-button {
@@ -375,11 +381,6 @@ body, .modal, .modal-open, .header {
   }
   .procedure {
     background: url("../img/seo_img-min.png") center/cover no-repeat;
-  }
-  .price {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 20, 45, 0.75)), to(rgba(0, 20, 45, 0.75))), url("../img/seo/store-min.png") center/cover no-repeat;
-    background: -o-linear-gradient(left, rgba(0, 20, 45, 0.75) 0%, rgba(0, 20, 45, 0.75) 100%), url("../img/seo/store-min.png") center/cover no-repeat;
-    background: linear-gradient(90deg, rgba(0, 20, 45, 0.75) 0%, rgba(0, 20, 45, 0.75) 100%), url("../img/seo/store-min.png") center/cover no-repeat;
   }
   .price__table, .price__table-th, .price__table-td, .price__table-td:nth-of-type(2), .price__table-td:nth-of-type(3), .price__table .btn {
     font-size: 80%;

@@ -1,5 +1,9 @@
 .price {
-	background: linear-gradient(90deg, rgba(0, 20, 45, 0.75) 0%, rgba(0,20,45,0.75) 100%), url("../img/seo/store.png") center / cover no-repeat;
+	//background: linear-gradient(90deg, rgba(0, 20, 45, 0.75) 0%, rgba(0,20,45,0.75) 100%), url("../img/seo/store.png") center / cover no-repeat;
+	background: url("../img/seo_img.png") center / cover no-repeat;
+	&__container {
+		background-color: rgba(0, 0, 0, 0.65);
+	}
 	&__head {
 		color: #fff;
 	}
@@ -21,7 +25,7 @@
 
 @media screen and (max-width: 576px) {
 	.price {
-		background: linear-gradient(90deg, rgba(0,20,45,0.75) 0%, rgba(0,20,45,0.75) 100%), url("../img/seo/store-min.png") center / cover no-repeat;
+		//background: linear-gradient(90deg, rgba(0,20,45,0.75) 0%, rgba(0,20,45,0.75) 100%), url("../img/seo/store-min.png") center / cover no-repeat;
 		&__table, &__table-th, &__table-td, &__table-td:nth-of-type(2), &__table-td:nth-of-type(3), &__table .btn {
 			font-size: 80%;
 		}

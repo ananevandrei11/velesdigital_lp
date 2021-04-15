@@ -3,6 +3,9 @@
   background: url('../img/bg_top.png') center / cover no-repeat;
 	&__main &__item {
 		color:rgb(0, 20, 45);
-    background-color: rgba(255,255,255, 0.9)
+    background-color: rgba(255,255,255, 0.98)
+	}
+	&__item_price {
+		color:rgb(172,46,55);
 	}
 }
